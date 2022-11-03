@@ -12,14 +12,20 @@ Godot MMKV is an efficient, small, easy-to-use key-value storage framework,its b
 
 # Quick Tutorial
 ---
->1.Download the file to your addons folder
-`
-  var _mmkv = load("res://addons/godot-mmkv/mmkv.gd").new()
-  
-  func _ready():
-    _mmkv.initMMKV("file_path","file_name")
-    _mmkv.setString("key","value")
-    var result = _mmkv.getString("key")
-    print(result)
-  
-`
+Download the file to your addons folder
+
+```gdsript
+var _mmkv = load("res://addons/godot-mmkv/mmkv.gd").new()`
+
+  func _ready():  
+    _mmkv.initMMKV("file_path","file_name") 
+    _mmkv.setString("key","value")  
+    var result = _mmkv.getString("key") 
+    print(result) 
+```
+>Supported data types:
+>>1.String
+
+>>2.float
+
+>>3.Dictionary
