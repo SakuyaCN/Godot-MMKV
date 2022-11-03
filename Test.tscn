@@ -20,7 +20,7 @@ margin_top = 10.0
 margin_right = 233.0
 margin_bottom = 27.0
 custom_fonts/font = SubResource( 1 )
-text = "MMKV读写10000次速度/毫秒"
+text = "MMKV读写10000次速度/MS"
 
 [node name="Label2" type="Label" parent="Control"]
 margin_left = 21.0
@@ -28,7 +28,39 @@ margin_top = 154.0
 margin_right = 265.0
 margin_bottom = 171.0
 custom_fonts/font = SubResource( 1 )
-text = "Godot FIle读写10000次速度/毫秒"
+text = "Godot FIle读写10000次速度/MS"
+
+[node name="Label3" type="Label" parent="Control"]
+margin_left = 21.0
+margin_top = 343.0
+margin_right = 324.0
+margin_bottom = 364.0
+custom_fonts/font = SubResource( 1 )
+text = "MMKV 单次写入(Write)："
+
+[node name="Label5" type="Label" parent="Control"]
+margin_left = 21.0
+margin_top = 378.0
+margin_right = 324.0
+margin_bottom = 399.0
+custom_fonts/font = SubResource( 1 )
+text = "MMKV 单次读取(Read)："
+
+[node name="Label4" type="Label" parent="Control"]
+margin_left = 21.0
+margin_top = 412.0
+margin_right = 324.0
+margin_bottom = 433.0
+custom_fonts/font = SubResource( 1 )
+text = "Godot File 单次写入(Write)："
+
+[node name="Label6" type="Label" parent="Control"]
+margin_left = 21.0
+margin_top = 446.0
+margin_right = 324.0
+margin_bottom = 467.0
+custom_fonts/font = SubResource( 1 )
+text = "Godot File 单次读取(Read)："
 
 [node name="Button" type="Button" parent="Control"]
 margin_left = 324.0
@@ -80,19 +112,27 @@ margin_bottom = 179.0
 custom_fonts/font = SubResource( 1 )
 text = "HP:"
 
+[node name="Lv" type="Label" parent="Control2"]
+margin_left = 6.0
+margin_top = 181.0
+margin_right = 274.0
+margin_bottom = 227.0
+custom_fonts/font = SubResource( 1 )
+text = "LV:"
+
 [node name="Label6" type="Label" parent="Control2"]
 margin_left = 6.0
-margin_top = 208.0
+margin_top = 232.0
 margin_right = 274.0
-margin_bottom = 254.0
+margin_bottom = 278.0
 custom_fonts/font = SubResource( 1 )
 text = "dict(字典)"
 
 [node name="dict" type="Label" parent="Control2"]
 margin_left = 6.0
-margin_top = 249.0
+margin_top = 273.0
 margin_right = 274.0
-margin_bottom = 295.0
+margin_bottom = 319.0
 custom_fonts/font = SubResource( 1 )
 text = "dict(字典)"
 
@@ -103,5 +143,18 @@ margin_right = 460.0
 margin_bottom = 191.0
 text = "update"
 
+[node name="Button3" type="Button" parent="Control2"]
+margin_left = 364.0
+margin_top = 201.0
+margin_right = 460.0
+margin_bottom = 247.0
+text = "stop"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
 [connection signal="pressed" from="Control/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Control2/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Control2/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
