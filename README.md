@@ -15,7 +15,7 @@ Godot MMKV is an efficient, small, easy-to-use key-value storage framework,its b
 Download the file to your addons folder
 
 ```gdsript
-var _mmkv = load("res://addons/godot-mmkv/mmkv.gd").new()`
+var _mmkv = load("res://addons/godot-mmkv/mmkv.gd").new()
 
   func _ready():  
     _mmkv.initMMKV("file_path","file_name") 
@@ -29,3 +29,16 @@ var _mmkv = load("res://addons/godot-mmkv/mmkv.gd").new()`
 >>2.float
 
 >>3.Dictionary
+---
+# Autosave class
+It can automatically cache variables in the current script
+```gdsript
+extends NodeMMKV
+
+#var hp = 0 
+#The variable will be automatically saved, and it will be automatically assigned the next time it is opened.
+
+func _init():
+	isBinding = true #open auto save
+	save_tikc = 0.05 #save wait time
+ ```
