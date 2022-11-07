@@ -10,6 +10,10 @@ Godot MMKV is an efficient, small, easy-to-use key-value storage framework,its b
 >Multi-Process concurrency: MMKV supports concurrent read-read and read-write access between processes.
 >Easy-to-use. You can use MMKV as you go. All changes are saved immediately, no sync, no apply calls needed.
 
+## Supported operating systems:
+- Windows(x64)
+- Android(arm64-v8a)
+
 # Quick Tutorial
 ---
 Download the file to your addons folder
