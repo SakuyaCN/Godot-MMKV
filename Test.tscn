@@ -20,7 +20,7 @@ margin_top = 10.0
 margin_right = 233.0
 margin_bottom = 27.0
 custom_fonts/font = SubResource( 1 )
-text = "MMKV读写10000次速度/MS"
+text = "MMKV读写(Write and read) 10000次速度/MS"
 
 [node name="Label2" type="Label" parent="Control"]
 margin_left = 21.0
@@ -28,7 +28,7 @@ margin_top = 154.0
 margin_right = 265.0
 margin_bottom = 171.0
 custom_fonts/font = SubResource( 1 )
-text = "Godot FIle读写10000次速度/MS"
+text = "Godot FIle读写(Write and read) 10000次速度/MS"
 
 [node name="Label3" type="Label" parent="Control"]
 margin_left = 21.0
@@ -63,10 +63,10 @@ custom_fonts/font = SubResource( 1 )
 text = "Godot File 单次读取(Read)："
 
 [node name="Button" type="Button" parent="Control"]
-margin_left = 324.0
-margin_top = 102.0
-margin_right = 401.0
-margin_bottom = 146.0
+margin_left = 425.0
+margin_top = 271.0
+margin_right = 502.0
+margin_bottom = 315.0
 text = "start"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
@@ -84,9 +84,9 @@ margin_bottom = 299.0
 scroll_following = true
 
 [node name="Control2" type="Control" parent="."]
-margin_left = 435.0
+margin_left = 515.0
 margin_top = 13.0
-margin_right = 760.0
+margin_right = 840.0
 margin_bottom = 412.0
 
 [node name="Label3" type="Label" parent="Control2"]
