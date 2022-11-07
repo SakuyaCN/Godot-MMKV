@@ -5,6 +5,13 @@
 .import/
 export.cfg
 export_presets.cfg
+autoLoad/
+image/
+Test.tscn
+Test.gd
+SC-Medium.tff
+README.md
+LICENSE
 
 # Imported translations (automatically generated from CSV files)
 *.translation
