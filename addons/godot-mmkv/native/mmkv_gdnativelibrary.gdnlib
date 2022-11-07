@@ -7,7 +7,7 @@ reloadable=true
 
 [entry]
 
-Android.arm64-v8a="res://addons/godot-mmkv/native/android/arm64/libgodot_mmkv.so"
+Android.arm64-v8a="res://addons/godot-mmkv/native/android/arm64-v8a/libgodot_mmkv.so"
 Windows.64="res://addons/godot-mmkv/native/win/GodotMMKV.dll"
 
 [dependencies]

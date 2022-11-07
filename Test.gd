@@ -3,6 +3,7 @@ extends Control
 var mmkv = load("res://addons/godot-mmkv/mmkv.gd").new()
 
 func _ready():
+	ProjectSettings
 	mmkv.initMMKV()
 	loadData()
 	
@@ -59,11 +60,11 @@ func saveFile(content):
 	file.close()
 
 func loadFile():
-    var file = File.new()
-    file.open("user://save_game.dat", File.READ)
-    var content = file.get_as_text()
-    file.close()
-    return content
+	var file = File.new()
+	file.open("user://save_game.dat", File.READ)
+	var content = file.get_as_text()
+	file.close()
+	return content
 	
 func _on_Button_pressed():
 	yield(test(),"completed")
