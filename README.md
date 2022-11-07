@@ -12,7 +12,7 @@ Godot MMKV is an efficient, small, easy-to-use key-value storage framework,its b
 
 ## Supported operating systems:
 - Windows(x64)
-- Android(arm64-v8a)
+- Android(arm64-v8a x86_64)
 
 # Quick Tutorial
 ---
