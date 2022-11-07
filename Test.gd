@@ -66,9 +66,13 @@ func loadFile():
     return content
 	
 func _on_Button_pressed():
+	yield(test(),"completed")
+
+func test():
 	mmkvTest()
 	
 	fileTest()
+	yield(get_tree(),"idle_frame")
 
 func _on_Button2_pressed():
 	PlayerData.player_name = "咲夜" + str(randf())
